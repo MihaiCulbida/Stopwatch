@@ -1,0 +1,70 @@
+* {
+  font-family: "Azeret Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timer__block {
+  width: 150px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.timer__block .time {
+  background-color: #7e7ec5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 150px;
+  font-size: 95px;
+}
+.timer__block .title {
+  background-color: #7a5fa6;
+  padding: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.buttons .button {
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 10px;
+  width: 180px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.buttons .button.start, .buttons .button.stop {
+  color: #7e7ec5;
+}
+.buttons .button.start:hover, .buttons .button.stop:hover {
+  background-color: #7a5fa6;
+  color: white;
+}
+.buttons .button.reset:hover {
+  background-color: #e03b3b;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

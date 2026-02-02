@@ -1,0 +1,76 @@
+$mainColor1: #7e7ec5;
+$mainColor2: #7a5fa6;
+
+* {
+    font-family: 'Azeret Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__block {
+        width: 150px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        .time {
+            background-color: $mainColor1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 150px;
+            font-size: 95px;
+        }
+        .title {
+            background-color: $mainColor2;
+            padding: 5px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 150px;
+    .button {
+        border: none;
+        border-radius: 15px;
+        font-size: 18px;
+        padding: 10px;
+        width: 180px;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        &.start, &.stop {
+            color: $mainColor1;
+            &:hover {
+                background-color: $mainColor2;
+                color: white;
+            }
+        }
+        &.reset {
+            &:hover {
+                background-color: #e03b3b;
+                color: white;
+            }
+        }
+    }
+}
+
