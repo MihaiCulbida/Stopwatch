@@ -1,11 +1,18 @@
 $mainColor1: #7e7ec5;
 $mainColor2: #7a5fa6;
 
+
 * {
     font-family: 'Azeret Mono', monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at top left, #e8e4f3, #f7f8fc);
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .container {
@@ -23,6 +30,8 @@ $mainColor2: #7a5fa6;
         width: 150px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
+        box-shadow: 0 8px 25px rgba(126, 126, 197, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
         .time {
             background-color: $mainColor1;
             display: flex;
@@ -58,6 +67,7 @@ $mainColor2: #7a5fa6;
         width: 180px;
         transition: 0.3s ease-in-out;
         cursor: pointer;
+        background-color: white;
         &.start, &.stop {
             color: $mainColor1;
             &:hover {
@@ -73,4 +83,3 @@ $mainColor2: #7a5fa6;
         }
     }
 }
-
