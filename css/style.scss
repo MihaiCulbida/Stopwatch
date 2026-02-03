@@ -65,20 +65,27 @@ body {
         font-size: 18px;
         padding: 10px;
         width: 180px;
-        transition: 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         cursor: pointer;
-        background-color: white;
+        background: white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+        font-weight: 500;
         &.start, &.stop {
             color: $mainColor1;
             &:hover {
                 background-color: $mainColor2;
                 color: white;
+                transform: translateY(-4px);
+                box-shadow: 0 8px 25px rgba(122, 95, 166, 0.4);
             }
         }
         &.reset {
+            color: #666;
             &:hover {
                 background-color: #e03b3b;
                 color: white;
+                transform: translateY(-4px);
+                box-shadow: 0 8px 25px rgba(224, 59, 59, 0.4);
             }
         }
     }

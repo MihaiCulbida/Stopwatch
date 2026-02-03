@@ -62,9 +62,11 @@ body {
   font-size: 18px;
   padding: 10px;
   width: 180px;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
-  background-color: white;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  font-weight: 500;
 }
 .buttons .button.start, .buttons .button.stop {
   color: #7e7ec5;
@@ -72,8 +74,15 @@ body {
 .buttons .button.start:hover, .buttons .button.stop:hover {
   background-color: #7a5fa6;
   color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(122, 95, 166, 0.4);
+}
+.buttons .button.reset {
+  color: #666;
 }
 .buttons .button.reset:hover {
   background-color: #e03b3b;
   color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(224, 59, 59, 0.4);
 }/*# sourceMappingURL=style.css.map */
