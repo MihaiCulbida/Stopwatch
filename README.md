@@ -8,4 +8,6 @@ A clean, minimal stopwatch built with HTML, SCSS, and JavaScript.
 - **Stop** - pauses at the current time
 - **Reset** - clears back to zero
 
-## 
+## How to use
+Try it directly in your browser - open deployments and access the last link or go directly here https://mihaiculbida.github.io/Stopwatch/
+
